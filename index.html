@@ -2,9 +2,93 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>CuriouScity</title>
+
+    <!-- Including Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
   </head>
+
+
   <body>
-    This is where the website goes.
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <div class="container">
+        <!-- Logo -->
+        <a href="#" class="navbar-brand">
+          <img src="images/logo.png" style="height: 80px;" alt="">
+        </a>
+
+      <!-- Hamburger button for collapsed menu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu Items -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="navbar-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+
+          <!-- Drowpdown menu for About -->
+
+          <li class="navbar-item dropdown">
+
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+
+            <!-- Dropdown menu items -->
+
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li> <a class="dropdown-item" href="#">Mission Statement</a></li>
+              <li> <a class="dropdown-item" href="#">Our Founders</a></li>
+              <li> <a class="dropdown-item" href="#">Curiouscity Today</a></li>
+              <li> <a class="dropdown-item" href="#">Our Successes</a></li>
+            </ul>
+          </li>
+
+          <!-- Dropdown menu for Programs and Events -->
+
+          <li class="navbar-item dropdown">
+
+            <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs and Events</a>
+
+            <!-- Dropdown menu items -->
+
+            <ul class="dropdown-menu" aria-labelledby="programsDropdown">
+              <li> <a class="dropdown-item" href="#">School Programs</a></li>
+              <li> <a class="dropdown-item" href="#">Public Events</a></li>
+              <li> <a class="dropdown-item" href="#">Corporate Events</a></li>
+              <li> <a class="dropdown-item" href="#">Summer Programs</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar-item">
+            <a class="nav-link" href="#">Tickets</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="#">Careers</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section>
+      
+    </section>
+
+    <!-- Bootstrap JS Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
   </body>
 </html>
