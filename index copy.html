@@ -29,8 +29,8 @@
 
     <style>
 
-      .navigation-bar{
-        background-color: white;
+      .nav-container{
+        height: 10vh;
       }
 
       .navbar-nav{
@@ -41,61 +41,62 @@
         border: 1px solid black;
         margin-left: 20px;
         text-align: center;
-        background-color: white;
+      }
+
+      .menubar{
+        position: absolute;
+        bottom: 0;
       }
 
       .navbar-brand{
         min-height: 100px;
-      }
-
-      .menubar{
-        justify-content: center;
-      }
-
-      .brandspace{
-        justify-content: center;
+        position: absolute;
+        right: 0;
       }
 
     </style>
 
-    <div class="container-fluid navigation-bar">
+    <div class="container nav-container">
 
-      <div class="brandspace container">
-          <a href="#" class="navbar-brand">
-            <center>
-            <img src="images/Logo.png" style="height: 15vh;" alt="">
-          </center>
-          </a>
-      </div>
+<!--      <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
 
-      <div class="row menubar">
+      <nav class="navbar navbar-light bg-light">
 
-        <div class="col-lg col-md-4 col-6 navbar-item" id="home-tab">
-          <a class="nav-link" href="#">Discovery Center</a>
+
+        <!-- Logo -->
+        <a href="#" class="navbar-brand">
+          <img src="images/Logo.png" style="height: 15vh;" alt="">
+        </a>
+
+        <div class="container menubar">
+          <ul class="navbar-nav mr-auto">
+
+            <li class="navbar-item" id="home-tab">
+              <a class="nav-link" href="#">Discovery Center</a>
+            </li>
+
+            <li class="navbar-item" id="about-tab">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+
+            <li class="navbar-item" id="people-tab">
+              <a class="nav-link" href="#">People</a>
+            </li>
+
+            <li class="navbar-item" id="success-tab">
+              <a class="nav-link" href="#">Our Success</a>
+            </li>
+
+            <li class="navbar-item" id="programs-tab">
+              <a class="nav-link" href="#">Programs</a>
+            </li>
+
+            <li class="navbar-item" id="careers-tab">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+
+          </ul>
         </div>
-
-        <div class="col-lg col-md-4 col-6 navbar-item" id="about-tab">
-          <a class="nav-link" href="#">About Us</a>
-        </div>
-
-        <div class="col-lg col-md-4 col-6 navbar-item" id="people-tab">
-          <a class="nav-link" href="#">People</a>
-        </div>
-
-        <div class="col-lg col-md-4 col-6 navbar-item" id="success-tab">
-          <a class="nav-link" href="#">Our Success</a>
-        </div>
-
-        <div class="col-lg col-md-4 col-6 navbar-item" id="programs-tab">
-          <a class="nav-link" href="#">Programs</a>
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6 navbar-item" id="careers-tab">
-          <a class="nav-link" href="#">Careers</a>
-        </div>
-
-      </div>
-      </div>
 
 
       <!-- Hamburger button for collapsed menu
