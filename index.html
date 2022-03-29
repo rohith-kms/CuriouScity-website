@@ -331,30 +331,43 @@
 
   <style>
 
-    .card-deck{
+    /* Container with all decks */
+    .decks{
       margin-top: 20px;
       width: 100%;
       height: auto;
     }
-    .card-deck .card{
-      height: 15em;
-      background: #fdb713;
+
+    .card{
       z-index: 10;
-    }
-
-    .card-body{
       color: white;
+      height: 100%;
+      padding: 0.5em;
     }
 
-    .card-body p{
+    .card p{
       font-size: 1.3em;
       font-family: 'PT Sans Narrow', sans-serif;
+      align-content: center;
+    }
+
+    .card h3{
+      font-size: 1.5em;
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-weight: bolder;
+    }
+
+
+    .title-card h1{
+      margin: auto;
+      padding: 0.5em;
     }
 
     .card-deck .btn{
       justify: end;
     }
 
+    /* Individual deck */
     .deck{
       visibility: hidden;
       position: absolute;
@@ -369,9 +382,9 @@
   </style>
 
 
-  <div class="container card-deck">
+  <div class="container decks">
 
-    <!-- Card Deck 1 -->
+    <!-- Centre Deck -->
 
     <div class="row justify-content-center deck active">
 
@@ -444,97 +457,103 @@
 
     </div>
 
-    <!-- Card Deck 2 -->
+    <!-- About Us Deck -->
 
     <div class="row justify-content-center deck">
 
-      <div class="col">
-        <div class="card">
-          <img src="" alt="">
-          <div class="card-body">
-            <h2 class="card-title">Deck 2 bobboa</h2>
-            <p>Booyaya</p>
-            <a href="#" class="btn btn-primary"> Goo </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card">
-          <img src="" alt="">
-          <div class="card-body">
-            <h2 class="card-title">Muhaha 2</h2>
-            <p>Booyaya</p>
-            <a href="#" class="btn btn-primary"> Goo </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card">
-          <img src="" alt="">
-          <div class="card-body">
-            <h2 class="card-title">Screen 2</h2>
-            <p>yabababa</p>
-            <a href="#" class="btn btn-primary"> Goo </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card">
-          <img src="" alt="">
-          <div class="card-body">
-            <h2 class="card-title">Summer Programs</h2>
-            <p>Booyaya</p>
-            <a href="#" class="btn btn-primary"> Goo </a>
-          </div>
-        </div>
-      </div>
 
     </div>
 
-    <!-- Card Deck 3 -->
+    <!-- Success Card Deck -->
 
     <div class="row g-4 deck">
 
-      <div class="col-lg">
+      <!-- Testimonials Section -->
+
+      <div class="col-12">
+        <div class="card title-card">
+          <h1>Testimonials</h1>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
         <div class="card">
-          <img src="" alt="">
           <div class="card-body">
-            <h2 class="card-title">Testimonials</h2>
             <p>I enjoyed all the classes a lot. In all the other science classes, the teachers were very boring and put me to sleep saying long scientific exclamations that sounded (Blah Blah Blah) x 100 but this science class was amazing and we could do the stuff you guys do. </p>
             <p style="text-align:right;"> - Aditya (age 9)</p>
-            <hr>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+
             <p>It was just excellent! All the experiments were very simple and was connected to their syllabus also. It will help them understand the concepts as they have experienced it. Thank you
             </p>
             <p style="text-align:right;"> - Jyotsana (teacher)</p>
-            <hr>
-            <p>Avanti looked forward to each class, preparing herself in advance to get the most. She actually benefited most by the passion and understanding of the instructors; something which she hadn’t seen in the school. She developed an understanding of fundamental concepts, which she could not get as neatly through her text books earlier. Congrats for being able to give them a taste of scientific temperament, which may change their direction and approach in life.</p>
-            <p style="text-align:right;"> - Mohan (parent)</p>
-            <a href="#" class="btn btn-primary">Read more Testimonials</a>
+
           </div>
         </div>
       </div>
 
-      <div class="col-lg">
+      <div class="col-lg-4">
         <div class="card">
-          <img src="" alt="">
           <div class="card-body">
-            <h2 class="card-title">Articles</h2>
+
+            <p>Avanti looked forward to each class, preparing herself in advance to get the most. She actually benefited most by the passion and understanding of the instructors; something which she hadn’t seen in the school. She developed an understanding of fundamental concepts, which she could not get as neatly through her text books earlier. Congrats for being able to give them a taste of scientific temperament, which may change their direction and approach in life.</p>
+            <p style="text-align:right;"> - Mohan (parent)</p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Figure out link design -->
+      <a href="#" class="btn btn-primary">Read more Testimonials</a>
+
+      <!-- Articles Section -->
+
+      <div class="col-12">
+        <div class="card title-card">
+          <h1>Articles</h1>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+
+            <h3>"Science in curious li’l hands" - The Hindu, 30th January, 2015</h3>
+
+            <hr>
+
             <p>"In a world where kids are increasingly bogged down by mugging facts and swimming through a swarm of data, Curiouscity, a Bengaluru-based organisation has been getting children to work with their hands and minds, put some thought into the science they learn, and supplement conventional structured learning with seamless experiments. And in the process, get them to lose their fear of science, and begin loving it."</p>
-            <p>- "Science in curious li’l hands" - The Hindu, 30th January, 2015"</p>
-            <a href="#" class="btn btn-primary"> Read the full article</a>
+            <a href="#" class="btn btn-primary"> Full article >></a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+
+            <h3>"Lab is a many-splendoured thing" - Time Out, June 2011</h3>
+
             <hr>
 
             <p>"You might want to consider the method adopted by Shonali Chinniah and her associates at Curiouscity when they attempt to unravel the physics behind pendulums to kids: they suspend a bucket using 20 feet of rope from a tree and let it swing away. Later, they hand out potatoes of various shapes and sizes to the children and ask them to replicate the exercise, thereby demonstrating that [the pendulum's mass] indeed has no effect on [its time period]. 'We teach children how to observe, explore and come to their own conclusions after an experiment is conducted,' said Chinniah." </p>
-            <p>- "Lab is a many-splendoured thing" - Time Out, June 2011"</p>
-            <a href="#" class="btn btn-primary"> Read the full article</a>
-            <hr>
 
-            <a href="#" class="btn btn-primary"> Read more articles</a>
+            <a href="#" class="btn btn-primary"> Full article >></a>
 
           </div>
+        </div>
+      </div>
+
+
+      <div class="col-12">
+        <div class="card title-card">
+          <h1>Kids' Questions</h1>
         </div>
       </div>
 
@@ -542,11 +561,10 @@
         <div class="card">
           <img src="" alt="">
           <div class="card-body">
-            <h2 class="card-title">Kids' Questions</h2>
             <p>We discovered all about grounding one day: we tried to create a human chain battery on the kids say so, and discovered that if a kid broke the circle and was standing on a carpet, the electricity did not pass through, and if they were standing on the ground and did the same the electricity did pass through. We were very excited, since we serendepitiously hit upon the concept of grounding when we did this spur of the moment exercise using a penny, a nail, a voltmeter, and a bunch of kids. This all heppened because one kid asked if blood would be a better conductor of electricity, as his lemon battery wasn’t working too well, and couldn’t light the light bulb. He reasoned that he once got a shock and therefore his blood must be a good conductor of electricity.</p>
             <hr>
             <p>When Nima was running a session and we pointed out how different colours race across the paper at different speeds depending on a) their affinity to the paper, b) their affinity to the water, one little girl wanted to know what would happen if we turned the chromatograph paper the other way around. “Will the red still win the race?” It was lovely considering that no kid had thought to ask this in the many sessions we’d held thus far. We dried out the paper and turned the chromatograph upside down and showed them how the colours race back... ofcourse the red would only have a chance to win again if it had enough time and place to run the race backwards.</p>
-            <a href="#" class="btn btn-primary"> Read More </a>
+            <a href="#" class="btn btn-primary"> More Questions >></a>
           </div>
         </div>
       </div>
@@ -556,124 +574,43 @@
 
 
 
-    <!-- Card Deck 4 -->
+    <!-- Gallery Deck-->
     <div class="row g-4 deck">
 
-      <div class="col-lg-4">
-        <div class="card">
-          <img src="" alt="">
-          <div class="card-body">
-            <h2 class="card-title">Deck 3 bobboa</h2>
-            <p>Booyaya</p>
-            <a href="#" class="btn btn-primary"> Goo </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="card">
-          <img src="" alt="">
-          <div class="card-body">
-            <h2 class="card-title">Muhaha 3</h2>
-            <p>Booyaya</p>
-            <a href="#" class="btn btn-primary"> Goo </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg">
-        <div class="card">
-          <img src="" alt="">
-          <div class="card-body">
-            <h2 class="card-title">Screen 3</h2>
-            <p>yabababa</p>
-            <a href="#" class="btn btn-primary"> Goo </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg">
-        <div class="card">
-          <img src="" alt="">
-          <div class="card-body">
-            <h2 class="card-title">Summer Programs</h2>
-            <p>Booyaya</p>
-            <a href="#" class="btn btn-primary"> Goo </a>
-          </div>
+      <div class="col-12">
+        <div class="card title-card">
+          <h1>Coming Soon!</h1>
         </div>
       </div>
 
     </div>
 
-    <!-- Card Deck 5 -->
+    <!-- Tickets Deck -->
+
+    <div class="row g-4 deck">
+
+        <div class="col-12">
+          <div class="card title-card">
+            <h1>Coming Soon!</h1>
+          </div>
+        </div>
+
+    </div>
+
+    <!-- Contact Deck -->
 
       <div class="row g-4 deck">
 
         <div class="col-12">
-          <div class="card">
-            <img src="" alt="">
-            <div class="card-body">
-              <h2 class="card-title">Coming Soon!</h2>
-              <p>Booyaya</p>
-              <a href="#" class="btn btn-primary"> Goo </a>
-            </div>
+          <div class="card title-card">
+            <h1>Coming Soon!</h1>
           </div>
         </div>
 
     </div>
 
-    <!-- Card Deck 6 -->
-
-      <div class="row g-4 deck">
-
-        <div class="col-lg-4">
-          <div class="card">
-            <img src="" alt="">
-            <div class="card-body">
-              <h2 class="card-title">Deck 6 bobboa</h2>
-              <p>Booyaya</p>
-              <a href="#" class="btn btn-primary"> Goo </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="card">
-            <img src="" alt="">
-            <div class="card-body">
-              <h2 class="card-title">Muhaha 6</h2>
-              <p>Booyaya</p>
-              <a href="#" class="btn btn-primary"> Goo </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg">
-          <div class="card">
-            <img src="" alt="">
-            <div class="card-body">
-              <h2 class="card-title">Screen 6</h2>
-              <p>yabababa</p>
-              <a href="#" class="btn btn-primary"> Goo </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg">
-          <div class="card">
-            <img src="" alt="">
-            <div class="card-body">
-              <h2 class="card-title">Summer Programs</h2>
-              <p>Booyaya</p>
-              <a href="#" class="btn btn-primary"> Goo </a>
-            </div>
-          </div>
-        </div>
-
     </div>
 
-
-  </div>
 
   <!-- Script to change menu button color-->
 
@@ -694,6 +631,22 @@
 
   var colors = ['#00aeef','#ed502b','#f58d23','#6c3776','#14a751','#fdb713'];
 
+  // Build an array of colors in rgb colorspace
+
+  var colors_rgb = [];
+
+  for (var i = 0; i < colors.length; i++) {
+    c = hexToRgb(colors[i]); // convert hex color to rgb
+    colors_rgb.push(c);
+  }
+
+  // Set initial colors
+
+  card_c = colors_rgb[colors.length -1]; //card color
+  $(".card").css("background-color",
+  "rgb(" + card_c.r + ", " + card_c.g + ", " + card_c.b + ", 0.8)");
+
+
   // Set Menu items to their colors
 
   for (var i = 0; i < colors.length; i++) {
@@ -707,7 +660,7 @@
     $(".caption").eq(i).css("background-color",
     "rgb(" + c.r + ", " + c.g + ", " + c.b + ", 0.7)");
 
-    console.log("rgb(" + c.r + ", " + c.g + ", " + c.b + ", 0.7)")
+    console.log("rgb(" + c.r + ", " + c.g + ", " + c.b + ", 0.7)");
   }
 
   var currentSlide = 0;
@@ -737,7 +690,10 @@
       $(".nav-link").eq(previousSlide).css("color",colors[previousSlide]);
 
       // Change card colors
-      $(".card-body").css("background",colors[colors.length - currentSlide -1]).fadeIn();
+
+      card_c = colors_rgb[colors.length - currentSlide -1]; //card color
+      $(".card").css("background-color",
+      "rgb(" + card_c.r + ", " + card_c.g + ", " + card_c.b + ", 0.8)");
 
       // Change cards with Carousel
       $(".deck").eq(previousSlide).removeClass('active');
